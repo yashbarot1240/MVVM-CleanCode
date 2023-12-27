@@ -25,7 +25,7 @@ protocol APIServiceProtocol {
 class UrlComponents {
     let path: String
     let baseUrlString = "https://api.nytimes.com/svc/mostpopular/v2/"
-    let apiKey = "5X6hmHXhM1PHaP5FM6l1J3sOTEuCKhRM"
+    let apiKey = APP_DELEGATE.apiKey
     let searchQuery: String?
     
     

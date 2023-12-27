@@ -21,6 +21,8 @@ class DefaultNyArticlesListRouter: NyArticlesListRouter {
     func perform(_ screen: NyArticlesListScreens, from source: NyTimesMostPopularArticlesList, withData data:ArticlesListCellViewModel) {
         switch screen {
         case .details:
+            let vc = DefaultNyArticlesListRouter.makeNYTimesMostPopularArticlesDetailsViewController(data: data)
+            source.navigationController?.pushViewController(vc, animated: true)
             break
         }
     }
@@ -30,6 +32,11 @@ class DefaultNyArticlesListRouter: NyArticlesListRouter {
 
 private extension DefaultNyArticlesListRouter {
     
-  
+    static func makeNYTimesMostPopularArticlesDetailsViewController(data:ArticlesListCellViewModel) -> NYTimesMostPopularArticlesDetails {
+        let vc = NYTimesMostPopularArticlesDetails.instantiate(fromAppStoryboard: .Main)
+        vc.data = data
+        
+        return vc
+    }
   
 }

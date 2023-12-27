@@ -28,6 +28,7 @@
 		E49285CE2B3C523B00806270 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285CA2B3C523B00806270 /* APIService.swift */; };
 		E49285D12B3C52AF00806270 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E49285D02B3C52AF00806270 /* SDWebImage */; };
 		E49285D42B3C531900806270 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E49285D32B3C531900806270 /* SDWebImage */; };
+		E49285DB2B3C537F00806270 /* NYTimesMostPopularArticlesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285D82B3C537F00806270 /* NYTimesMostPopularArticlesDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E49285C62B3C523B00806270 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E49285C82B3C523B00806270 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E49285CA2B3C523B00806270 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E49285D82B3C537F00806270 /* NYTimesMostPopularArticlesDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYTimesMostPopularArticlesDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E49285AB2B3C523500806270 /* NYTimesMostPopularArticlesList */,
+				E49285D52B3C537F00806270 /* NYTimesMostPopularArticlesDetails */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -138,11 +141,11 @@
 		E49285AB2B3C523500806270 /* NYTimesMostPopularArticlesList */ = {
 			isa = PBXGroup;
 			children = (
-				E49285AC2B3C523500806270 /* ViewModel */,
 				E49285AE2B3C523500806270 /* Controller */,
+				E49285B82B3C523500806270 /* Router */,
 				E49285B02B3C523500806270 /* Model */,
 				E49285B52B3C523500806270 /* View */,
-				E49285B82B3C523500806270 /* Router */,
+				E49285AC2B3C523500806270 /* ViewModel */,
 			);
 			path = NYTimesMostPopularArticlesList;
 			sourceTree = "<group>";
@@ -194,8 +197,8 @@
 		E49285C32B3C523B00806270 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				E49285C42B3C523B00806270 /* Extension */,
 				E49285C72B3C523B00806270 /* Constant */,
+				E49285C42B3C523B00806270 /* Extension */,
 				E49285C92B3C523B00806270 /* APIService */,
 			);
 			path = Utility;
@@ -231,6 +234,46 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E49285D52B3C537F00806270 /* NYTimesMostPopularArticlesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E49285D72B3C537F00806270 /* Controller */,
+				E49285D92B3C537F00806270 /* Model */,
+				E49285DA2B3C537F00806270 /* View */,
+				E49285D62B3C537F00806270 /* ViewModel */,
+			);
+			path = NYTimesMostPopularArticlesDetails;
+			sourceTree = "<group>";
+		};
+		E49285D62B3C537F00806270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E49285D72B3C537F00806270 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E49285D82B3C537F00806270 /* NYTimesMostPopularArticlesDetails.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E49285D92B3C537F00806270 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E49285DA2B3C537F00806270 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +397,7 @@
 				E49285CD2B3C523B00806270 /* Constants.swift in Sources */,
 				E49285CE2B3C523B00806270 /* APIService.swift in Sources */,
 				E49285BB2B3C523500806270 /* NyTimesMostPopularArticlesList.swift in Sources */,
+				E49285DB2B3C537F00806270 /* NYTimesMostPopularArticlesDetails.swift in Sources */,
 				E49285BA2B3C523500806270 /* NyTimeArticlesViewModel.swift in Sources */,
 				E492857D2B3C50FA00806270 /* SceneDelegate.swift in Sources */,
 				E49285BD2B3C523500806270 /* MostPopularArticles.swift in Sources */,
