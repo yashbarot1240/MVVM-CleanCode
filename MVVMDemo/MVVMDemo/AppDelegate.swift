@@ -10,7 +10,7 @@ let APP_DELEGATE = UIApplication.shared.delegate as! AppDelegate
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var apiKey = "5X6hmHXhM1PHaP5FM6l1J3sOTEuCKhRM"
+    var apiKey = "API-KEY"
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
