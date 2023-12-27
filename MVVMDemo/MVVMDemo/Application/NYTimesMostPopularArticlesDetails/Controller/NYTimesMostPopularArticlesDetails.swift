@@ -50,6 +50,8 @@ extension NYTimesMostPopularArticlesDetails {
     //Mark: Setup View Component
     func initView() {
         
+        navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.title = "Details"
 
         
 

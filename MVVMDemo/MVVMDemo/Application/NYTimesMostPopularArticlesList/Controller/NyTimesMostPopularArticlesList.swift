@@ -6,11 +6,13 @@
 //
 
 import UIKit
-
+import DropDown
 
 class NyTimesMostPopularArticlesList: UIViewController {
 
     @IBOutlet weak var tableViewList: UITableView!
+    
+    @IBOutlet weak var labelFilter: UILabel!
     
     lazy var viewModel: NyTimeArticlesViewModel = {
         return NyTimeArticlesViewModel()
@@ -28,9 +30,20 @@ class NyTimesMostPopularArticlesList: UIViewController {
         
         // init view model
         initVM()
+        
+        updateUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
 
-
+    
+    @IBAction func button_dropDownClick(_ sender: UIButton) {
+        self.openDropDown(sender: sender)
+    }
+    
 }
 
 extension NyTimesMostPopularArticlesList {
@@ -40,6 +53,9 @@ extension NyTimesMostPopularArticlesList {
         self.tableViewList.delegate = self
         self.tableViewList.dataSource = self
         self.tableViewList.register(UINib(nibName: "NyTimesMostPopularArticlesTableViewCell", bundle: nil), forCellReuseIdentifier: Cells.articalListCellIdentifier)
+        
+        
+        self.navigationItem.title = "Articles"
 
         
 
@@ -47,7 +63,7 @@ extension NyTimesMostPopularArticlesList {
     
     //Mark: Update View
     func updateUI()  {
-       
+        self.labelFilter.text = "Today"
     }
         
     //Mark: Setup ViewModel
@@ -67,11 +83,51 @@ extension NyTimesMostPopularArticlesList {
         viewModel.reloadTableViewClosure = { [weak self] () in
             DispatchQueue.main.async {
                 self?.tableViewList.reloadData()
+                self?.hideLoader()
             }
         }
         
-        viewModel.getArticlesList(period: "7")
+        self.loadArticles(period: "1")
         
+    }
+    
+    func loadArticles(period : String ){
+        
+        viewModel.getArticlesList(period: period)
+        self.startLoader(message: "Load articles...")
+        
+    }
+    
+    
+    func openDropDown(sender : UIButton){
+        let dropDown = DropDown()
+
+        // The view to which the drop down will appear on
+        dropDown.anchorView = sender // UIView or UIBarButtonItem
+        dropDown.bottomOffset = CGPoint(x: 0, y: sender.frame.size.height)
+        // The list of items to display. Can be changed dynamically
+        dropDown.dataSource = ["Today", "Last 7 Days", "Last 30 Days"]
+        
+        // Action triggered on selection
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+          print("Selected item: \(item) at index: \(index)")
+            DispatchQueue.main.async {
+                self.labelFilter.text = item
+                
+                if index == 0 {
+                    self.loadArticles(period: "1")
+                }else if index == 1 {
+                    self.loadArticles(period: "7")
+                }else if index == 2 {
+                    self.loadArticles(period: "30")
+                }
+            }
+            
+            
+        }
+
+        dropDown.show()
+
     }
     
 }

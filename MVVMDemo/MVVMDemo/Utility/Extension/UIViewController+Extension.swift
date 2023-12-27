@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import NVActivityIndicatorView
 
 enum AppStoryboard : String {
     
@@ -56,4 +57,19 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+}
+
+extension UIViewController : NVActivityIndicatorViewable {
+
+    func hideLoader(){
+        print("*#*#*#*#*# hideLoader",String(describing: self))
+        stopAnimating()
+
+    }
+
+    func startLoader(message : String? = nil){
+        print("*#*#*#*#*# startLoader",String(describing: self))
+        startAnimating(CGSize(width: 50, height: 50), message: message, type: .ballPulseSync, color: .white, padding: 0)
+       }
+
 }
