@@ -13,6 +13,21 @@
 		E49285842B3C50FD00806270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49285832B3C50FD00806270 /* Assets.xcassets */; };
 		E49285872B3C50FD00806270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49285852B3C50FD00806270 /* LaunchScreen.storyboard */; };
 		E49285922B3C50FD00806270 /* MVVMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285912B3C50FD00806270 /* MVVMDemoTests.swift */; };
+		E49285BA2B3C523500806270 /* NyTimeArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285AD2B3C523500806270 /* NyTimeArticlesViewModel.swift */; };
+		E49285BB2B3C523500806270 /* NyTimesMostPopularArticlesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285AF2B3C523500806270 /* NyTimesMostPopularArticlesList.swift */; };
+		E49285BC2B3C523500806270 /* ArticlesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B12B3C523500806270 /* ArticlesResult.swift */; };
+		E49285BD2B3C523500806270 /* MostPopularArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B22B3C523500806270 /* MostPopularArticles.swift */; };
+		E49285BE2B3C523500806270 /* ArticlesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B32B3C523500806270 /* ArticlesMedia.swift */; };
+		E49285BF2B3C523500806270 /* ArticlesMediaMetadatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B42B3C523500806270 /* ArticlesMediaMetadatum.swift */; };
+		E49285C02B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49285B62B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.xib */; };
+		E49285C12B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B72B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.swift */; };
+		E49285C22B3C523500806270 /* NyArticlesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285B92B3C523500806270 /* NyArticlesListRouter.swift */; };
+		E49285CB2B3C523B00806270 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285C52B3C523B00806270 /* UIView.swift */; };
+		E49285CC2B3C523B00806270 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285C62B3C523B00806270 /* UIViewController+Extension.swift */; };
+		E49285CD2B3C523B00806270 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285C82B3C523B00806270 /* Constants.swift */; };
+		E49285CE2B3C523B00806270 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49285CA2B3C523B00806270 /* APIService.swift */; };
+		E49285D12B3C52AF00806270 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E49285D02B3C52AF00806270 /* SDWebImage */; };
+		E49285D42B3C531900806270 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E49285D32B3C531900806270 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,19 @@
 		E49285882B3C50FD00806270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E492858D2B3C50FD00806270 /* MVVMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49285912B3C50FD00806270 /* MVVMDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMDemoTests.swift; sourceTree = "<group>"; };
+		E49285AD2B3C523500806270 /* NyTimeArticlesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyTimeArticlesViewModel.swift; sourceTree = "<group>"; };
+		E49285AF2B3C523500806270 /* NyTimesMostPopularArticlesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyTimesMostPopularArticlesList.swift; sourceTree = "<group>"; };
+		E49285B12B3C523500806270 /* ArticlesResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesResult.swift; sourceTree = "<group>"; };
+		E49285B22B3C523500806270 /* MostPopularArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostPopularArticles.swift; sourceTree = "<group>"; };
+		E49285B32B3C523500806270 /* ArticlesMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesMedia.swift; sourceTree = "<group>"; };
+		E49285B42B3C523500806270 /* ArticlesMediaMetadatum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesMediaMetadatum.swift; sourceTree = "<group>"; };
+		E49285B62B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NyTimesMostPopularArticlesTableViewCell.xib; sourceTree = "<group>"; };
+		E49285B72B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyTimesMostPopularArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		E49285B92B3C523500806270 /* NyArticlesListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyArticlesListRouter.swift; sourceTree = "<group>"; };
+		E49285C52B3C523B00806270 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E49285C62B3C523B00806270 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E49285C82B3C523B00806270 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E49285CA2B3C523B00806270 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49285D12B3C52AF00806270 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49285D42B3C531900806270 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +91,7 @@
 				E49285792B3C50FA00806270 /* MVVMDemo */,
 				E49285902B3C50FD00806270 /* MVVMDemoTests */,
 				E49285782B3C50FA00806270 /* Products */,
+				E49285D22B3C531900806270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +109,8 @@
 			children = (
 				E492857A2B3C50FA00806270 /* AppDelegate.swift */,
 				E492857C2B3C50FA00806270 /* SceneDelegate.swift */,
+				E49285C32B3C523B00806270 /* Utility */,
+				E49285AA2B3C523500806270 /* Application */,
 				E49285802B3C50FA00806270 /* Main.storyboard */,
 				E49285832B3C50FD00806270 /* Assets.xcassets */,
 				E49285852B3C50FD00806270 /* LaunchScreen.storyboard */,
@@ -92,6 +125,112 @@
 				E49285912B3C50FD00806270 /* MVVMDemoTests.swift */,
 			);
 			path = MVVMDemoTests;
+			sourceTree = "<group>";
+		};
+		E49285AA2B3C523500806270 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E49285AB2B3C523500806270 /* NYTimesMostPopularArticlesList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E49285AB2B3C523500806270 /* NYTimesMostPopularArticlesList */ = {
+			isa = PBXGroup;
+			children = (
+				E49285AC2B3C523500806270 /* ViewModel */,
+				E49285AE2B3C523500806270 /* Controller */,
+				E49285B02B3C523500806270 /* Model */,
+				E49285B52B3C523500806270 /* View */,
+				E49285B82B3C523500806270 /* Router */,
+			);
+			path = NYTimesMostPopularArticlesList;
+			sourceTree = "<group>";
+		};
+		E49285AC2B3C523500806270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E49285AD2B3C523500806270 /* NyTimeArticlesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E49285AE2B3C523500806270 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E49285AF2B3C523500806270 /* NyTimesMostPopularArticlesList.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E49285B02B3C523500806270 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E49285B12B3C523500806270 /* ArticlesResult.swift */,
+				E49285B22B3C523500806270 /* MostPopularArticles.swift */,
+				E49285B32B3C523500806270 /* ArticlesMedia.swift */,
+				E49285B42B3C523500806270 /* ArticlesMediaMetadatum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E49285B52B3C523500806270 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E49285B62B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.xib */,
+				E49285B72B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E49285B82B3C523500806270 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E49285B92B3C523500806270 /* NyArticlesListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E49285C32B3C523B00806270 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E49285C42B3C523B00806270 /* Extension */,
+				E49285C72B3C523B00806270 /* Constant */,
+				E49285C92B3C523B00806270 /* APIService */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E49285C42B3C523B00806270 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E49285C52B3C523B00806270 /* UIView.swift */,
+				E49285C62B3C523B00806270 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E49285C72B3C523B00806270 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E49285C82B3C523B00806270 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E49285C92B3C523B00806270 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				E49285CA2B3C523B00806270 /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		E49285D22B3C531900806270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +249,9 @@
 			dependencies = (
 			);
 			name = MVVMDemo;
+			packageProductDependencies = (
+				E49285D02B3C52AF00806270 /* SDWebImage */,
+			);
 			productName = MVVMDemo;
 			productReference = E49285772B3C50FA00806270 /* MVVMDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +270,9 @@
 				E492858F2B3C50FD00806270 /* PBXTargetDependency */,
 			);
 			name = MVVMDemoTests;
+			packageProductDependencies = (
+				E49285D32B3C531900806270 /* SDWebImage */,
+			);
 			productName = MVVMDemoTests;
 			productReference = E492858D2B3C50FD00806270 /* MVVMDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -160,6 +305,9 @@
 				Base,
 			);
 			mainGroup = E492856E2B3C50FA00806270;
+			packageReferences = (
+				E49285CF2B3C52AF00806270 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = E49285782B3C50FA00806270 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49285872B3C50FD00806270 /* LaunchScreen.storyboard in Resources */,
+				E49285C02B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.xib in Resources */,
 				E49285842B3C50FD00806270 /* Assets.xcassets in Resources */,
 				E49285822B3C50FA00806270 /* Main.storyboard in Resources */,
 			);
@@ -195,8 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49285CC2B3C523B00806270 /* UIViewController+Extension.swift in Sources */,
+				E49285BF2B3C523500806270 /* ArticlesMediaMetadatum.swift in Sources */,
+				E49285BC2B3C523500806270 /* ArticlesResult.swift in Sources */,
+				E49285CB2B3C523B00806270 /* UIView.swift in Sources */,
+				E49285BE2B3C523500806270 /* ArticlesMedia.swift in Sources */,
 				E492857B2B3C50FA00806270 /* AppDelegate.swift in Sources */,
+				E49285C22B3C523500806270 /* NyArticlesListRouter.swift in Sources */,
+				E49285CD2B3C523B00806270 /* Constants.swift in Sources */,
+				E49285CE2B3C523B00806270 /* APIService.swift in Sources */,
+				E49285BB2B3C523500806270 /* NyTimesMostPopularArticlesList.swift in Sources */,
+				E49285BA2B3C523500806270 /* NyTimeArticlesViewModel.swift in Sources */,
 				E492857D2B3C50FA00806270 /* SceneDelegate.swift in Sources */,
+				E49285BD2B3C523500806270 /* MostPopularArticles.swift in Sources */,
+				E49285C12B3C523500806270 /* NyTimesMostPopularArticlesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +636,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E49285CF2B3C52AF00806270 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E49285D02B3C52AF00806270 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E49285CF2B3C52AF00806270 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E49285D32B3C531900806270 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E49285CF2B3C52AF00806270 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E492856F2B3C50FA00806270 /* Project object */;
 }
