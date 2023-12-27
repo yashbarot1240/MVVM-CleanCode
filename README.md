@@ -14,7 +14,7 @@ A model to represent the data you'll fetch from the API.
 A ViewModel that will handle the data logic and API calls.
 
 ## API KEY
-- Generate API KEY From [Nytimes Developer](https://developer.nytimes.com/) and enable `Most Popular API`
+- Generate API KEY From [Nytimes Developer](https://developer.nytimes.com/) and enable `Most Popular API` and Add on `AppDelegate`
 
 
 ## Unit Test
